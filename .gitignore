@@ -141,3 +141,16 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# =========================================================================
+# AXUDOSENTCHANZE CUSTOM STRUCTURAL EXCLUSIONS
+# =========================================================================
+# Absolute lock on custom routing profiles, tokens, and bank account matrix parameters
+.env
+
+# Protect the active data transaction ledger state file from public visibility
+bank_ledger.json
+
+# Keep local hardhat caches and deployment private key wallet definitions private
+artifacts/
+cache/
